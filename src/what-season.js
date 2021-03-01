@@ -4,7 +4,7 @@ module.exports = function getSeason(date) {
 
   if(date == null) return 'Unable to determine the time of year!';
 
-  for (elem in date) {
+  for (let elem in date) {
     if (typeof(date[elem]) !== 'number') {
       throw Error ('Dangerous');
     }
