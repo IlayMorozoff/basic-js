@@ -17,7 +17,7 @@ module.exports = function repeater(str, options) {
   const repeatTimes = options.repeatTimes || 1;
   // устанавливает число повторений str
 
-  if (addition === undefined) {
+  if (typeof(addition) == 'undefined') {
     addition = '';
   }
   
